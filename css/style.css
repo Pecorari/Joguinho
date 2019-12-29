@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+
+:root{
+    --primary-color: rgb(214, 175, 102);
+    --primary-color-darker: rgb(182, 138, 56);
+
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container{
+    text-align: center;
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container input, .conteiner label, .container button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container input{
+    font-size: 24px;
+    height: 30px;
+    padding: 0 20px;
+}
+
+.container input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+.container button{
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 28px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.container button:hover{
+    background: var(--primary-color-darker);
+}
+
+.container button:active{
+    background: rgb(158, 110, 55);
+}
+
+.h1{
+    text-align: center;
+}
+
+.paragrafo-invalido{
+    background: rgb(236, 107, 107);
+    padding: 10px 20px;
+}
+
+.pers {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.pers:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_contents {
+    text-align: justify;
+    background-color: white;
+    padding: 32px 64px;
+    border-radius: 8px;
+}
+
+.modal_close {
+    width: min-content;
+    height: min-content;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -32px;
+    margin-top: -16px;
+    cursor: pointer;
+}
+
+.modal_contents #aplica {
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    height: 28px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.modal_contents #aplica:hover{
+    background: var(--primary-color-darker);
+}
+.modal_contents #aplica:active{
+    background: rgb(158, 110, 55);
+}
+
+.modal_hidden {
+    display: none;
+}
